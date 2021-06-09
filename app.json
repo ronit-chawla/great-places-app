@@ -1,32 +1,39 @@
 {
   "expo": {
-    "name": "places",
-    "slug": "places",
+    "name": "GreAT PlaCES",
+    "description":"An app to share places you visit",
+    "slug": "great-places",
+    "privacy":"public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 1000
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier":"com.notanapp.great-places",
+      "buildNumber":"1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package":"com.notanapp.great_places",
+      "versionCode":1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+        "foregroundImage": "./assets/places-adaptive.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions":[
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     }
   }
 }
